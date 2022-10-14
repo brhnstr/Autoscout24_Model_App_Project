@@ -230,10 +230,9 @@ def main():
 
         prediction = model.predict(features_df)
 
-        if st.button('Predict'):
-            if prediction == 1:
-                #st.warning(f'Your vehicles value is € {int(prediction)}')
-                st.warning("The Value Is : ",prediction)
+        if st.button('Predict'): 
+            # st.warning(f'Your vehicles value is € {int(prediction)}')
+            st.warning("The Value",prediction)
         
 
     # else:
