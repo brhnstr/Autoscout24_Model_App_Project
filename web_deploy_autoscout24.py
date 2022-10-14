@@ -210,7 +210,7 @@ def main():
 
                 }
         # print(data.values())
-        features_df = np.array(pd.DataFrame.from_dict([data]))
+        features_df = pd.DataFrame.from_dict([data])
         
         print(features_df)
 
