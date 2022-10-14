@@ -32,7 +32,7 @@ def main():
 
       #Setting Application description
     st.markdown("""
-     :dart:  WELCOME! This Streamlit app is made to predict AutoScout use case.
+     :blue_car:  WELCOME! This Streamlit app is made to predict AutoScout use case.
     The application is functional for online prediction. \n
     """)
     st.markdown("<h3></h3>", unsafe_allow_html=True)
