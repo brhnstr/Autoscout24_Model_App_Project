@@ -232,7 +232,8 @@ def main():
 
         if st.button('Predict'): 
             # st.warning(f'Your vehicles value is € {int(prediction)}')
-            st.warning("The Value",prediction)
+            st.success(f"The Prediction Price of the Car is €{int(prediction)}")
+
         
 
     # else:
