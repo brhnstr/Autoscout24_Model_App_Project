@@ -210,7 +210,7 @@ def main():
 
                 }
         # print(data.values())
-        features_df = np.array(pd.DataFrame.from_dict([data]))
+        features_df = pd.DataFrame.from_dict([data])
         
         print(features_df)
 
@@ -230,10 +230,10 @@ def main():
 
         prediction = model.predict(features_df)
 
-        if st.button('Predict'):
-            if prediction == 1:
-                #st.warning(f'Your vehicles value is € {int(prediction)}')
-                st.warning(prediction)
+        if st.button('Predict'): 
+            # st.warning(f'Your vehicles value is € {int(prediction)}')
+            st.success(f"The Prediction Price of the Car is €{int(prediction)}")
+
         
 
     # else:
